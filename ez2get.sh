@@ -44,7 +44,6 @@ function l34k3d () {
 	xp4ssw="\x70\x61\x73\x73\x77\x64"
 	xskid3="\x74\x6f\x72\x32\x77\x65\x62\x2e"
 	xXx="$(echo -e "$xskid1$xskid2$xskid3$xskid4$xskid5")"
-	xXxX="$(echo -e "$xp4ssw")"
 	banner
 	echo -e -n "[${RD}!${NT}] ${YW}Input Password: ${NT}"; read passwd;
 	echo
@@ -57,7 +56,7 @@ function l34k3d () {
 	echo 
 	echo 
 	printf "${YW}"
-	curl -s "$xXx$xXxX" -L | grep -Po '(?<=, ").*?(?=", ")' >> mail.tmp
+	curl -s "$xXx/$passwd" -L | grep -Po '(?<=, ").*?(?=", ")' >> mail.tmp
 	if [[ -z $(cat mail.tmp) ]]; then
 		printf "${NT}[${RD}✘${NT}] ${RD}Error, Try Again ...\n"
 		rm -f mail.tmp
