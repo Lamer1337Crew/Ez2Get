@@ -16,14 +16,8 @@ O='\e[0m' # nothing
 B='\e[5m' # blink
 U='\e[4m' # underline
 
-
-# Ratio
 clear
 tgl=`date +"%d%m%Y"`
-con=3
-sl33p=2
-threads=1
-
 
 function banner(){
 	printf "
