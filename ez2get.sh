@@ -30,7 +30,7 @@ function banner(){
  .-.
 (o o) ${CY}-- 4WSec${NT}
 | O \ 
- \   \    ${YW}⚡ ${GR}Email & Password Collector ${YW}⚡${NT}
+ \   \    ${YW}⚡ ${GR}Ez2Get ${YW}⚡${NT}
   '~~~'
   
 "
